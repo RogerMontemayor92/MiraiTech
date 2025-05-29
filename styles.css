@@ -6,21 +6,24 @@ body {
     background-color: #FFFFFF; /* Blanco puro */
 }
 
-/* Encabezado centrado con azul acero */
+/* Encabezado centrado con logotipo y texto */
 header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     background-color: #365486; /* Azul acero */
     color: white;
     padding: 20px;
     text-align: center;
 }
 
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Espacio entre el logo y el texto */
+}
+
 /* Logotipo */
-.logo img {
-    width: 150px;
+.logo {
+    width: 120px;
 }
 
 /* Títulos */
