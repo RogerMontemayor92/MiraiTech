@@ -1,33 +1,38 @@
-/* Configuración general */
+/* Fondo general */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #F4D03F; /* Amarillo dorado */
 }
 
-/* Encabezado */
+/* Encabezado centrado */
 header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #2c3e50;
+    flex-direction: column;
+    background-color: #1F3C88; /* Azul rey */
     color: white;
     padding: 20px;
+    text-align: center;
 }
 
+/* Logotipo */
 .logo img {
     width: 150px;
 }
 
+/* Títulos */
 .title h1 {
     margin: 0;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .title p {
     margin: 5px 0;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 /* Contenedor principal */
@@ -40,8 +45,9 @@ header {
 
 /* Menús laterales */
 .left-menu, .right-menu {
-    background-color: #ccc;
+    background-color: #F39C12; /* Naranja */
     padding: 15px;
+    color: white;
 }
 
 .left-menu ul, .right-menu ul {
@@ -55,19 +61,37 @@ header {
 
 .left-menu ul li a, .right-menu ul li a {
     text-decoration: none;
-    color: #2c3e50;
+    color: white;
+    font-weight: bold;
 }
 
 /* Contenido principal */
 .content {
     background-color: white;
     padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón llamativo */
+button {
+    background-color: #E74C3C; /* Rojo vibrante */
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #C0392B;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #2c3e50;
+    background-color: #1F3C88; /* Azul rey */
     color: white;
 }
