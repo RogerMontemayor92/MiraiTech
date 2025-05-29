@@ -3,16 +3,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F4D03F; /* Amarillo dorado */
+    background-color: #FFFFFF; /* Blanco puro */
 }
 
-/* Encabezado centrado */
+/* Encabezado centrado con azul acero */
 header {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #1F3C88; /* Azul rey */
+    background-color: #365486; /* Azul acero */
     color: white;
     padding: 20px;
     text-align: center;
@@ -43,9 +43,9 @@ header {
     padding: 20px;
 }
 
-/* Menús laterales */
+/* Menús laterales con fondo gris oscuro */
 .left-menu, .right-menu {
-    background-color: #F39C12; /* Naranja */
+    background-color: #2E2E2E; /* Gris oscuro */
     padding: 15px;
     color: white;
 }
@@ -61,7 +61,7 @@ header {
 
 .left-menu ul li a, .right-menu ul li a {
     text-decoration: none;
-    color: white;
+    color: #E67E22; /* Naranja quemado */
     font-weight: bold;
 }
 
@@ -74,7 +74,7 @@ header {
 
 /* Botón llamativo */
 button {
-    background-color: #E74C3C; /* Rojo vibrante */
+    background-color: #E67E22; /* Naranja quemado */
     padding: 12px 24px;
     border: none;
     cursor: pointer;
@@ -85,13 +85,13 @@ button {
 }
 
 button:hover {
-    background-color: #C0392B;
+    background-color: #5D3FD3; /* Morado profundo */
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #1F3C88; /* Azul rey */
+    background-color: #365486; /* Azul acero */
     color: white;
 }
