@@ -1,162 +1,157 @@
 /* Fondo general */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #FFFFFF;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
 }
 
-/* Encabezado mejorado con gradiente y animaciones */
+/* Encabezado */
 header {
-    background: linear-gradient(to right, #365486, #1F3C88);
-    color: gray;
-    padding: 40px;
-    text-align: center;
-    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to right, #365486, #1F3C88);
+  color: white;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* Contenedor del encabezado */
 .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-/* Logotipo con efecto de entrada */
+/* Logotipo */
 .logo {
-    width: 120px;
-    height: auto;
-    animation: fadeIn 1.5s ease-in-out;
+  width: 120px;
+  height: auto;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
-/* Título "MiraiTech" con animación */
+/* Título "MiraiTech" con efecto metálico y borde fino en negro */
 .title h1 {
-    margin: 0;
-    font-size: 48px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    animation: slideLeft 1.2s ease-in-out;
+  margin: 0;
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: linear-gradient(135deg, #C0C0C0, #FFFFFF, #C0C0C0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 1px solid black;
+  display: inline-block;
+  padding: 10px;
 }
 
 /* Eslogan debajo del título */
 .slogan {
-    margin-top: 10px;
-    font-size: 22px;
-    font-style: italic;
-    font-weight: 400;
-    color: #F4D03F;
-    animation: slideUp 1s ease-in-out;
+  margin-top: 10px;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 400;
+  color: #F4D03F;
+  animation: slideUp 1s ease-in-out;
+}
+
+/* Información adicional de la empresa */
+.company-info {
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
 }
 
 /* Animaciones */
 @keyframes fadeIn {
-    from { opacity: 0; transform: scale(0.9); }
-    to { opacity: 1; transform: scale(1); }
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
 }
 
 @keyframes slideUp {
-    from { opacity: 0; transform: translateY(15px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes slideLeft {
-    from { opacity: 0; transform: translateX(-30px); }
-    to { opacity: 1; transform: translateX(0); }
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* Contenedor principal */
 .container {
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    gap: 20px;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  gap: 20px;
+  padding: 20px;
 }
 
 /* Menús laterales */
 .left-menu, .right-menu {
-    background-color: #2E2E2E;
-    padding: 15px;
-    color: white;
+  background-color: #2E2E2E;
+  padding: 15px;
+  color: white;
 }
 
 .left-menu ul, .right-menu ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .left-menu ul li, .right-menu ul li {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .left-menu ul li a, .right-menu ul li a {
-    text-decoration: none;
-    color: #E67E22;
-    font-weight: bold;
+  text-decoration: none;
+  color: #E67E22;
+  font-weight: bold;
 }
 
 /* Contenido principal */
 .content {
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Contenedor del carrusel */
+/* Carrusel de imágenes */
 .carousel {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    position: relative;
-    justify-content: center; /* Asegura que las imágenes se centren */
-    align-items: center;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Ajustar tamaño de las imágenes */
 .carousel img {
-    width: 75%; /* Mantiene el tamaño reducido */
-    height: auto;
-    border-radius: 8px;
-    transition: transform 1s ease-in-out;
-}
-
-/* Asegurar que solo se muestre una imagen a la vez */
-.carousel img:not(:first-child) {
-    display: none;
-}
-
-/* Animación del carrusel */
-@keyframes slide {
-    0% { transform: translateX(0); }
-    33% { transform: translateX(-100%); }
-    66% { transform: translateX(-200%); }
-    100% { transform: translateX(0); }
+  width: 70%; /* Mantiene el tamaño reducido */
+  height: auto;
+  border-radius: 8px;
+  transition: transform 1s ease-in-out;
 }
 
 /* Botón animado */
 button {
-    background-color: #E67E22;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    transition: 0.3s;
+  background-color: #E67E22;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 button:hover {
-    background-color: #5D3FD3;
-    transform: scale(1.1);
+  background-color: #5D3FD3;
+  transform: scale(1.1);
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #365486;
-    color: white;
+  text-align: center;
+  padding: 20px;
+  background-color: #365486;
+  color: white;
 }
