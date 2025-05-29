@@ -9,7 +9,7 @@ body {
 /* Encabezado mejorado con gradiente y animaciones */
 header {
     background: linear-gradient(to right, #365486, #1F3C88);
-    color: white;
+    color: gray;
     padding: 40px;
     text-align: center;
     box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
@@ -115,7 +115,7 @@ header {
 
 /* Ajustar tamaño de las imágenes */
 .carousel img {
-    width: 75%; /* Mantiene el tamaño reducido */
+    width: 60%; /* Mantiene el tamaño reducido */
     height: auto;
     border-radius: 8px;
     transition: transform 1s ease-in-out;
