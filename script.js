@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Animación de aparición en el contenido al hacer scroll
+    // AnimaciÃ³n de apariciÃ³n en el contenido al hacer scroll
     const content = document.querySelector(".content");
 
     window.addEventListener("scroll", function () {
