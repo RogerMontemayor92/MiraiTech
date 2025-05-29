@@ -1,4 +1,4 @@
-/* Estilos generales */
+/* Fondo general */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,13 +6,13 @@ body {
     background-color: #FFFFFF;
 }
 
-/* Encabezado más vistoso */
+/* Encabezado mejorado con gradiente y animaciones */
 header {
-    background-color: #365486; /* Azul acero */
+    background: linear-gradient(to right, #365486, #1F3C88);
     color: white;
-    padding: 30px;
+    padding: 40px;
     text-align: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Agrega profundidad */
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* Contenedor del encabezado */
@@ -24,29 +24,30 @@ header {
     flex-wrap: wrap;
 }
 
-/* Logotipo */
+/* Logotipo con efecto de entrada */
 .logo {
     width: 120px;
     height: auto;
-    animation: fadeIn 1.5s ease-in-out; /* Animación de entrada */
+    animation: fadeIn 1.5s ease-in-out;
 }
 
-/* Título "MiraiTech" */
+/* Título "MiraiTech" con animación */
 .title h1 {
     margin: 0;
-    font-size: 42px; /* Tamaño más grande */
+    font-size: 48px;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    animation: slideLeft 1.2s ease-in-out;
 }
 
 /* Eslogan debajo del título */
 .slogan {
-    margin-top: 5px;
-    font-size: 20px;
+    margin-top: 10px;
+    font-size: 22px;
     font-style: italic;
     font-weight: 400;
-    color: #F4D03F; /* Color dorado llamativo */
+    color: #F4D03F;
     animation: slideUp 1s ease-in-out;
 }
 
@@ -57,14 +58,13 @@ header {
 }
 
 @keyframes slideUp {
-    from { opacity: 0; transform: translateY(10px); }
+    from { opacity: 0; transform: translateY(15px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Logotipo */
-.logo {
-    width: 100px;
-    height: auto;
+@keyframes slideLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
 }
 
 /* Contenedor principal */
@@ -75,7 +75,36 @@ header {
     padding: 20px;
 }
 
-/* Sección del carrusel */
+/* Menús laterales */
+.left-menu, .right-menu {
+    background-color: #2E2E2E;
+    padding: 15px;
+    color: white;
+}
+
+.left-menu ul, .right-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left-menu ul li, .right-menu ul li {
+    margin: 10px 0;
+}
+
+.left-menu ul li a, .right-menu ul li a {
+    text-decoration: none;
+    color: #E67E22;
+    font-weight: bold;
+}
+
+/* Contenido principal */
+.content {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Carrusel de imágenes */
 .carousel {
     display: flex;
     overflow: hidden;
