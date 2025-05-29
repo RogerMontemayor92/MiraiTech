@@ -113,7 +113,7 @@ header {
 }
 
 .carousel img {
-    width: 75%;
+    width: 50%;
     border-radius: 8px;
     animation: slide 10s infinite;
 }
