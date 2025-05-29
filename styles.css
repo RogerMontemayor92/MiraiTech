@@ -6,20 +6,59 @@ body {
     background-color: #FFFFFF;
 }
 
-/* Encabezado */
+/* Encabezado más vistoso */
 header {
-    background-color: #365486;
+    background-color: #365486; /* Azul acero */
     color: white;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Agrega profundidad */
 }
 
+/* Contenedor del encabezado */
 .header-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+}
+
+/* Logotipo */
+.logo {
+    width: 120px;
+    height: auto;
+    animation: fadeIn 1.5s ease-in-out; /* Animación de entrada */
+}
+
+/* Título "MiraiTech" */
+.title h1 {
+    margin: 0;
+    font-size: 42px; /* Tamaño más grande */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Eslogan debajo del título */
+.slogan {
+    margin-top: 5px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    color: #F4D03F; /* Color dorado llamativo */
+    animation: slideUp 1s ease-in-out;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 /* Logotipo */
