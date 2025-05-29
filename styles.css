@@ -113,9 +113,9 @@ header {
 }
 
 .carousel img {
-    width: 100%;
+    width: 75%;
     border-radius: 8px;
-    animation: slide 8s infinite;
+    animation: slide 10s infinite;
 }
 
 /* Animación del carrusel */
