@@ -111,20 +111,21 @@ header {
     max-width: 600px;
     margin: auto;
     position: relative;
+    justify-content: center; /* Asegura que las imágenes se centren */
+    align-items: center;
 }
 
 /* Ajustar tamaño de las imágenes */
 .carousel img {
-    width: 60%; /* Mantiene el tamaño reducido */
+    width: 75%; /* Mantiene el tamaño reducido */
     height: auto;
     border-radius: 8px;
     transition: transform 1s ease-in-out;
 }
 
-/* Asegurar que las imágenes se centran en el carrusel */
-.carousel {
-    justify-content: center;
-    align-items: center;
+/* Asegurar que solo se muestre una imagen a la vez */
+.carousel img:not(:first-child) {
+    display: none;
 }
 
 /* Animación del carrusel */
