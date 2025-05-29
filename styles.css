@@ -1,14 +1,14 @@
-/* Fondo general */
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FFFFFF; /* Blanco puro */
+    background-color: #FFFFFF;
 }
 
-/* Encabezado centrado con logotipo y texto */
+/* Encabezado */
 header {
-    background-color: #365486; /* Azul acero */
+    background-color: #365486;
     color: white;
     padding: 20px;
     text-align: center;
@@ -18,26 +18,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px; /* Espacio entre el logo y el texto */
-    flex-wrap: wrap; /* Evita problemas de alineación en pantallas pequeñas */
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 /* Logotipo */
 .logo {
-    width: 100px; /* Ajuste para mejor proporción */
-    height: auto; /* Mantiene el aspecto sin distorsionar */
-}
-
-/* Títulos */
-.title h1 {
-    margin: 0;
-    font-size: 32px;
-}
-
-.title p {
-    margin: 5px 0;
-    font-size: 20px;
-    font-weight: bold;
+    width: 100px;
+    height: auto;
 }
 
 /* Contenedor principal */
@@ -48,38 +36,32 @@ header {
     padding: 20px;
 }
 
-/* Menús laterales con fondo gris oscuro */
-.left-menu, .right-menu {
-    background-color: #2E2E2E; /* Gris oscuro */
-    padding: 15px;
-    color: white;
+/* Sección del carrusel */
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
 }
 
-.left-menu ul, .right-menu ul {
-    list-style: none;
-    padding: 0;
+.carousel img {
+    width: 100%;
+    border-radius: 8px;
+    animation: slide 8s infinite;
 }
 
-.left-menu ul li, .right-menu ul li {
-    margin: 10px 0;
+/* Animación del carrusel */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
 }
 
-.left-menu ul li a, .right-menu ul li a {
-    text-decoration: none;
-    color: #E67E22; /* Naranja quemado */
-    font-weight: bold;
-}
-
-/* Contenido principal */
-.content {
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Botón llamativo */
+/* Botón animado */
 button {
-    background-color: #E67E22; /* Naranja quemado */
+    background-color: #E67E22;
     padding: 12px 24px;
     border: none;
     cursor: pointer;
@@ -90,13 +72,14 @@ button {
 }
 
 button:hover {
-    background-color: #5D3FD3; /* Morado profundo */
+    background-color: #5D3FD3;
+    transform: scale(1.1);
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #365486; /* Azul acero */
+    background-color: #365486;
     color: white;
 }
